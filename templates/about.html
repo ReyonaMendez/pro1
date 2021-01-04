@@ -1,0 +1,38 @@
+{% extends 'header.html' %}
+{% block activeabout %}active{% endblock activeabout %}
+{% block content %}
+{% load static%}
+
+<div class="container my-3">
+  <h2 class="text-center my-3">About</h2>
+  <div class="card-deck">
+    <div class="card">
+      <img src="https://source.unsplash.com/700x300/?coder,desingner" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">WEB DEVELOPMENT</h5>
+        <p class="card-text">Creating custom responsive website layout/user. Writing well designed, testable, efficient
+          code with network diagnostics, network analytics tools and Search Engine Optimization process.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/700x300/?motorcycle" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MOTORCYCLIST</h5>
+        <p class="card-text">Any query about motorcyle will solved,feel free to contact </p>
+        <p class="card-text"><small class="text-muted">Last updated 4 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/700x300/?techy,imageeditor" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">IMAGE EDITOR</h5>
+        <p class="card-text">Creative department and use tools like Photoshop and Lightroom are used photo editing
+          software programs.work closely with creative, marketing, and social media teams to edit and prepare images for
+          social media uploads, such as for LinkedIn, Facebook and Instagram </p>
+        <p class="card-text"><small class="text-muted">Last updated 6 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

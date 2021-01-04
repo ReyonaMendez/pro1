@@ -1,0 +1,32 @@
+{% extends 'header.html' %}
+{% block activecontact %}active{% endblock activecontact %}
+{% block content %}
+{% load static%}
+
+  <div class="container my-3">
+    <h2 class="text-center my-3">Contact</h2>
+    
+    <form action="/contact" method="POST">
+    {% csrf_token %}
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Name</label>
+        <input type="text" class="form-control" id="name", name="name" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Phone</label>
+        <input type="phone" class="form-control" id="phone" name="phone"placeholder="your mobile number">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Explain your concern</label>
+        <textarea class="form-control" id="desc" name="desc" rows="5" placeholder="Message"></textarea>
+      </div>
+    <button type="submit" class="btn btn-dark">Send</button>
+    </form>
+
+  </div>
+{% endblock %}
